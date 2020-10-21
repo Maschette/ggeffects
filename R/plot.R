@@ -461,7 +461,7 @@ plot_panel <- function(x,
 	else if (has_groups && !facets_grp && colors[1] == "gs" && x_is_factor)
 		p <- ggplot2::ggplot(x, ggplot2::aes_string(x = "x", y = "predicted", colour = "group_col", fill = "group_col", shape = "group"))
 	else if (has_groups && colors[1] != "bw")
-		p <- ggplot2::ggplot(x, ggplot2::aes_string(x = "x", y = "predicted", colour = "group_col", fill = "group_col", linetype=line.type))
+		p <- ggplot2::ggplot(x, ggplot2::aes_string(x = "x", y = "predicted", colour = "group_col", fill = "group_col", linetype="group"))
 	else
 		p <- ggplot2::ggplot(x, ggplot2::aes_string(x = "x", y = "predicted"))
 	
