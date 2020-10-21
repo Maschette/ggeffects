@@ -121,7 +121,7 @@
 #' @importFrom stats binomial poisson gaussian Gamma inverse.gaussian quasi quasibinomial quasipoisson
 #' @importFrom sjlabelled as_numeric
 #' @export
-plot.ggeffects2 <- function(x,
+plot.ggeffects <- function(x,
 													 ci = TRUE,
 													 ci.style = c("ribbon", "errorbar", "dash", "dot"),
 													 facets,
